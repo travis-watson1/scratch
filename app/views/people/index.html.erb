@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 greeting text-center">
+            <div class="header">
+
+                <h1 class="rotate text-center size"> Welcome! </h1>
+                <br>
+                <p>
+                    Sign my Guest Book!
+                </p>
+            </div>
+        </div>
+        <div class="col-md-8 form">
+
+            <%= simple_form_for @person do |f| %>
+            <%= f.input :name, class: "form-control form-control-lg" %>
+            <%= f.input :age %>
+            <%= f.input :location %>
+            <br>
+            <%= f.button :submit, class: 'btn btn-sample' %>
+            <% end %>
+        </div>
+    </div>
+</div>
+<div class="container people text-center">
+    <h1>Visitors</h1>
+    <br>
+<div class="list">
+<p class="spacing">Name, Age, & Location</p>
+<hr class="hr">
+    <div class="spacing">
+        <% @people.each do |person| %>
+        <%= person.name %> -- 
+        <%= person.age %> -- 
+        <%= person.location %>
+        <br>
+        <% end %>
+    </div>
+</div>
+
+</div>
+
+<br>

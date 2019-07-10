@@ -1,10 +1,13 @@
 body{
-    background-color: #CDCDCD;
+    background-color: #fff1c1;
+    margin: 10%;
+    color: white;
 }
 
 .header {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
 }
 
 .head{
@@ -20,3 +23,88 @@ body{
     width: 20%;
     border: 1px solid;
 }
+
+.greeting{
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    background-color: #216583;
+}
+
+.form{
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    padding: 10%;
+    background-color: #f76262;
+}
+
+.people{
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    background-color: #293462;
+    padding: 5%;
+}
+
+.rotate {
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+
+  .list{
+      line-height: 2;
+  }
+
+  .hr{
+      border-color: #f76262;
+      width: 25%;
+  }
+
+  .spacing{
+      margin: 0 3%;
+  }
+
+  .btn-sample { 
+    color: #FFFFFF; 
+    background-color: #216583; 
+    border-color: #216583; 
+  } 
+   
+  .btn-sample:hover, 
+  .btn-sample:focus, 
+  .btn-sample:active, 
+  .btn-sample.active, 
+  .open .dropdown-toggle.btn-sample { 
+    color: #FFFFFF; 
+    background-color: #293462; 
+    border-color: #216583; 
+  } 
+   
+  .btn-sample:active, 
+  .btn-sample.active, 
+  .open .dropdown-toggle.btn-sample { 
+    background-image: none; 
+  } 
+   
+  .btn-sample.disabled, 
+  .btn-sample[disabled], 
+  fieldset[disabled] .btn-sample, 
+  .btn-sample.disabled:hover, 
+  .btn-sample[disabled]:hover, 
+  fieldset[disabled] .btn-sample:hover, 
+  .btn-sample.disabled:focus, 
+  .btn-sample[disabled]:focus, 
+  fieldset[disabled] .btn-sample:focus, 
+  .btn-sample.disabled:active, 
+  .btn-sample[disabled]:active, 
+  fieldset[disabled] .btn-sample:active, 
+  .btn-sample.disabled.active, 
+  .btn-sample[disabled].active, 
+  fieldset[disabled] .btn-sample.active { 
+    background-color: #216583; 
+    border-color: #216583; 
+  } 
+   
+  .btn-sample .badge { 
+    color: #216583; 
+    background-color: #FFFFFF; 
+  }
